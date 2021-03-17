@@ -4,4 +4,5 @@ USE [Test]
 
 
 
-SELECT Name, Age FROM customer ORDER BY Name 
+SELECT * FROM customer ORDER BY Name DESC
+ LIMIT 2
