@@ -4,5 +4,4 @@ USE [Test]
 
 
 
-
- SELECT * FROM  customer WHERE  Name LIKE  'r%'
+SELECT Name, Age FROM customer ORDER BY Name 
