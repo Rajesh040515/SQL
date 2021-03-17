@@ -5,5 +5,4 @@ USE [Test]
 
 
 
- SELECT * FROM  customer WHERE Address IN('rajkot','ahmedabad') 
-
+ SELECT * FROM  customer WHERE  Name LIKE  'r%'
