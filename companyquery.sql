@@ -3,10 +3,7 @@ GO
 
 
 
-select c.Name,
-o.order_id
-
-
-from   [Test].[dbo].[customer] c
- right join  [Test].[dbo]. [Orders] o
-on c.order_id = o.order_id
+select 
+*
+from [Test].[dbo].[customer] c
+cross join [Test].[dbo].[Orders] o
