@@ -1,5 +1,15 @@
 
-update [Test].[dbo].[customer]
-set Name='ritik' ,Address='bhuj'
+--update [Test].[dbo].[customer]
+--set  Salary= 15000
+--where order_id=1
+
+--select Name from [Test].[dbo].[customer]
+--where Salary >15000
+
+delete from  [Test].[dbo].[customer]
 where order_id=1
-select * from [Test].[dbo].[customer]
+
+
+
+
+--select Salary from [Test].[dbo].[customer]
