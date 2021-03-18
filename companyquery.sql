@@ -1,9 +1,8 @@
-USE [comany]
-GO
+select order_id
+from [Test].[dbo].[customer]
+union
+select order_id
+from [Test].[dbo].[Orders]
 
 
 
-select 
-*
-from [Test].[dbo].[customer] c
-cross join [Test].[dbo].[Orders] o
