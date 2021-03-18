@@ -7,10 +7,14 @@
 --where Salary >15000
 
 select 
-sum(Salary) as salary
+Name,
+count(Name)  as columncount  
 
-from [Test].[dbo].[customer]	
-group by Name 
+from [Test].[dbo].[customer]
+
+group by Name  with rollup
+
+
 
 
 --select Salary from [Test].[dbo].[customer]
