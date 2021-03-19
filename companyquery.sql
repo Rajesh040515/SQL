@@ -8,16 +8,17 @@
 
 
 
-			select Name from [Test].[dbo].[customer] c
-			where order_id= all(
+			select Age from [Test].[dbo].[customer] c
+			where   exists(
 
-			select order_id
+			select *
 			from [Test].[dbo].[Orders]
-			where Salary =10000)
+			where order_id= c.order_id
+			)
 
 
 
 
 
 
---select Salary from [Test].[dbo].[customer]
+--select * from [Test].[dbo].[customer]
