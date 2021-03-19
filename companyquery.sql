@@ -13,11 +13,9 @@
 
 
 
-
-select Name , 
-case 
-when Salary>10000 then 'high salary'
-
-else 'low salary'
-end as salary
- from [Test].[dbo].[customer]
+		create view fullname as
+	select c.Name ,
+	Age
+	from [Test].[dbo].[customer] c
+	
+	select * from  [Test].[dbo].[customer]
