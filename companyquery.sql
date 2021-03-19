@@ -6,19 +6,18 @@
 --select Name from [Test].[dbo].[customer]
 --where Salary >15000
 
-
-
-			select Age from [Test].[dbo].[customer] c
-			where   exists(
-
-			select *
-			from [Test].[dbo].[Orders]
-			where order_id= c.order_id
-			)
+	
+		
 
 
 
 
 
 
---select * from [Test].[dbo].[customer]
+select Name , 
+case 
+when Salary>10000 then 'high salary'
+
+else 'low salary'
+end as salary
+ from [Test].[dbo].[customer]
