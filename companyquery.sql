@@ -6,13 +6,16 @@
 --select Name from [Test].[dbo].[customer]
 --where Salary >15000
 
-select 
-Name,
-count(Name)  as columncount  
 
-from [Test].[dbo].[customer]
 
-group by Name  with rollup
+			select Name from [Test].[dbo].[customer] c
+			where order_id= all(
+
+			select order_id
+			from [Test].[dbo].[Orders]
+			where Salary =10000)
+
+
 
 
 
